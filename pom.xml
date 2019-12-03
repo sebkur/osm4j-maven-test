@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>sebkur</groupId>
+    <artifactId>osm4j-maven-test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <repositories>
+        <repository>
+            <id>idTopobyte</id>
+            <name>topobyte</name>
+            <url>http://mvn.topobyte.de</url>
+        </repository>
+        <repository>
+            <id>idslimjars</id>
+            <name>slimjars</name>
+            <url>http://mvn.slimjars.com</url>
+        </repository>
+    </repositories>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>de.topobyte</groupId>
+            <artifactId>osm4j-geometry</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>de.topobyte</groupId>
+            <artifactId>osm4j-pbf</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>de.topobyte</groupId>
+            <artifactId>osm4j-utils</artifactId>
+            <version>0.1.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wololo</groupId>
+            <artifactId>jts2geojson</artifactId>
+            <version>0.6.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.topobyte</groupId>
+            <artifactId>jts2awt</artifactId>
+            <version>0.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.topobyte</groupId>
+            <artifactId>mercator-image</artifactId>
+            <version>0.0.5</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>
